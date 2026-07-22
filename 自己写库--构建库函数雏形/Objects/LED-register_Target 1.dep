@@ -1,0 +1,5 @@
+Dependencies for Project 'LED-register', Target 'Target 1': (DO NOT MODIFY !)
+F (.\main.c)(0x6A4094BF)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I D:\野火【STM32F407开发板-霸天虎】资料\3-STM32官方资料_固件包_参考资料\标准库固件包\STM32F4官方固件库与手册（标准库）\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Libraries\CMSIS\Include-I.\RTE\_Target_1-ID:\Keil5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\Include-ID:\Keil5\ARM\CMSIS\Include-D__UVISION_VERSION="524" -DSTM32F40_41xxx-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (STM32f4xx.h)(0x6A4094BF)
+F (.\startup_stm32f40xx.s)(0x582097A0)(--cpu Cortex-M4.fp -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_Target_1-ID:\Keil5\ARM\PACK\Keil\STM32F4xx_DFP\1.0.8\Device\Include-ID:\Keil5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 524" --pd "STM32F40_41xxx SETA 1"--list .\listings\startup_stm32f40xx.lst --xref -o .\objects\startup_stm32f40xx.o --depend .\objects\startup_stm32f40xx.d)
+F (.\STM32f4xx.h)(0x6A4094BF)()

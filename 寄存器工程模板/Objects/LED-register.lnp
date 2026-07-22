@@ -1,0 +1,7 @@
+--cpu=Cortex-M4.fp
+".\objects\main.o"
+".\objects\startup_stm32f40xx.o"
+--library_type=microlib --strict --scatter ".\Objects\LED-register.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\LED-register.map" -o .\Objects\LED-register.axf

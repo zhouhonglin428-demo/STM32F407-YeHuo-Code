@@ -1,0 +1,7 @@
+Dependencies for Project 'LED-register', Target 'Target 1': (DO NOT MODIFY !)
+CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
+F (.\main.c)(0x6A44601D)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I D:\野火【STM32F407开发板-霸天虎】资料\3-STM32官方资料_固件包_参考资料\标准库固件包\STM32F4官方固件库与手册（标准库）\STM32F4xx_DSP_StdPeriph_Lib_V1.8.0\Libraries\CMSIS\Include-I.\RTE\_Target_1-ID:\Keil5\ARM\CMSIS\5.8.0\CMSIS\Core\Include-ID:\Keil5\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\Keil5\Keil\STM32F4xx_DFP\2.15.0\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DSTM32F407xx -D_RTE_-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (STM32f4xx.h)(0x6A445E8E)
+I (D:\Keil5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+F (.\startup_stm32f40xx.s)(0x582097A0)(--cpu Cortex-M4.fp.sp -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_Target_1-ID:\Keil5\ARM\CMSIS\5.8.0\CMSIS\Core\Include-ID:\Keil5\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-ID:\Keil5\Keil\STM32F4xx_DFP\2.15.0\Device\Include--pd "__UVISION_VERSION SETA 536" --pd "_RTE_ SETA 1" --pd "STM32F407xx SETA 1" --pd "_RTE_ SETA 1"--list .\listings\startup_stm32f40xx.lst --xref -o .\objects\startup_stm32f40xx.o --depend .\objects\startup_stm32f40xx.d)
+F (.\STM32f4xx.h)(0x6A445E8E)()
