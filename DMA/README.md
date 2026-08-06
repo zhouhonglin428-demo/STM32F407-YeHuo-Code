@@ -1,0 +1,1 @@
+本例程的解耦与模块化重构版本（抽离独立 `bsp_dma` 驱动层），已迁移至主仓库 👉 **[STM32F407_Refactored_Codebase](https://www.google.com/search?q=https://github.com/zhouhonglin428-demo/STM32F407_Refactored_Codebase)**
