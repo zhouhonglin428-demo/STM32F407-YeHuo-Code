@@ -123,9 +123,6 @@ void Usart_SendByte( USART_TypeDef * pUSARTx, uint8_t ch)
 }
 
 
-
-
-
 void Usart_SendString(USART_TypeDef* pUSARTx, char *str)
 {
 	unsigned int k=0;
@@ -140,8 +137,6 @@ void Usart_SendString(USART_TypeDef* pUSARTx, char *str)
   while(USART_GetFlagStatus(pUSARTx,USART_FLAG_TC)==RESET);	
 }
 
-
-
 ///重定向c库函数printf到串口，重定向后可使用printf函数
 int fputc(int ch, FILE *f)
 {
@@ -154,8 +149,6 @@ int fputc(int ch, FILE *f)
 		return (ch);
 }
 
-
-
 ///重定向c库函数scanf到串口，重写向后可使用scanf、getchar等函数
 int fgetc(FILE *f)
 {
@@ -164,17 +157,3 @@ int fgetc(FILE *f)
 
 		return (int)USART_ReceiveData(DEBUG_USART);
 }
-
-
-
-	/* 第六步：编写中断服务函数 */
-	//这个是电脑给单片机发送数据需要编写
-	//在stm32f4xx_it.c编写中断接收处理函数
-
-
-
-
-
-
-
-

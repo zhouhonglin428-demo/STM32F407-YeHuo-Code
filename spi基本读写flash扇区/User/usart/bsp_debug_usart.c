@@ -20,7 +20,7 @@ static void NVIC_Configuration(void)
 }
 
 
- 
+
 void Debug_USART_Config(void)
 {
   GPIO_InitTypeDef GPIO_InitStructure;
@@ -142,4 +142,3 @@ int fgetc(FILE *f)
 
 		return (int)USART_ReceiveData(DEBUG_USART);
 }
-/*********************************************END OF FILE**********************/
