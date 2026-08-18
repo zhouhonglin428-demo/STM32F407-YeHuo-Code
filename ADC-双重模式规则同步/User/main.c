@@ -1,0 +1,49 @@
+#include "stm32f4xx.h"
+#include "./led/bsp_led.h"
+#include "bsp_usart.h"
+#include <stdio.h>
+#include "bsp_adc.h"
+
+//延时函数
+static void Delay(__IO uint32_t ncount)
+{
+	for(;ncount!=0;ncount--);
+}
+
+
+// ADC1转换的电压值通过MDA方式传到SRAM
+extern __IO uint16_t ADC_ConvertedValue[2];
+
+// 局部变量，用于保存转换计算后的电压值 	 
+float ADC_ConvertedValueLocal[2]; 
+
+
+int main(void)
+{
+	//初始化串口
+	Debug_USART_Config();
+
+	//初始化ADC
+	Rheostat_Init();
+	
+	
+	while (1)
+	{
+    Delay(0xffffee);  
+    
+    ADC_ConvertedValueLocal[0] =(float)((uint16_t)ADC_ConvertedValue[0]*3.3/4096); 
+    ADC_ConvertedValueLocal[1] =(float)((uint16_t)ADC_ConvertedValue[1]*3.3/4096);    
+    
+    printf("\r\n The current AD value = 0x%08X \r\n", ADC_ConvertedValue[0]); 
+    printf("\r\n The current AD value = 0x%08X \r\n", ADC_ConvertedValue[1]);     
+    
+    printf("\r\n The current ADC1 value = %f V \r\n",ADC_ConvertedValueLocal[0]); 
+    printf("\r\n The current ADC2 value = %f V \r\n",ADC_ConvertedValueLocal[1]); 
+
+		
+	}
+}
+
+
+
+
